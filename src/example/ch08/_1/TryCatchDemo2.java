@@ -14,10 +14,10 @@ public class TryCatchDemo2 {
 			System.out.println("File is opened");
 			int data = in.read();
 			in.close();
-		}catch(FileNotFoundException e) {
+		}catch(FileNotFoundException e) { //new FileInputStream("lostFile.txt") 丟出
 			System.out.println("Catch FileNotFoundException");
 			e.printStackTrace();
-		}catch(IOException e) {
+		}catch(IOException e) { //由 in.read() 丟出
 			System.out.println("Catch IOException");
 			e.printStackTrace();
 		}catch(Exception e) {

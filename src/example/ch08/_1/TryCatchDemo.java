@@ -9,7 +9,7 @@ public class TryCatchDemo {
 			System.out.println("Opening a file ...");
 			InputStream in = new FileInputStream("lostFile.txt");
 			System.out.println("File is opened");
-		}catch(Exception e) {
+		}catch(Exception e) { //抓住所有的 Exception
 			e.printStackTrace();
 		}
 	}
